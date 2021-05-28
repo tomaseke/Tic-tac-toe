@@ -49,7 +49,8 @@ function finalFunc(i){
     return function(){
        if(document.getElementById("paragraph").innerHTML != "X has won." && document.getElementById("paragraph").innerHTML != "O has won."){
         if(counter%2===0){
-            document.getElementsByClassName("grid-item")[i].innerHTML = "<img src=\"https://img-premium.flaticon.com/png/512/1828/1828774.png?token=exp=1622192902~hmac=1124793199dd6bec0c04a4f94965812a\">";
+            document.getElementsByClassName("grid-item")[i].innerHTML = "<img src=\"cross.svg\">";
+           //https://img-premium.flaticon.com/png/512/1828/1828774.png?token=exp=1622192902~hmac=1124793199dd6bec0c04a4f94965812a
         }
         else{
             document.getElementsByClassName("grid-item")[i].innerHTML = "<img src=\"https://image.flaticon.com/icons/png/512/33/33759.png\">";
