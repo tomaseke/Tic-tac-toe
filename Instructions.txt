@@ -1,0 +1,13 @@
+Instructions for tic tac toe
+
+
+1. Html - make divs that will be filled by the crosses and circles
+2. Css - make the 3x3 grid
+3. JS - figure out the logic behind the game
+
+JS - sequence of events
+
+1. Listen for a click on 1 of the 9 squares
+2. Put the appropriate symbol in the square that was clicked
+3. Check if the move was game ending
+4. Swap the symbol

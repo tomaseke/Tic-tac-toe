@@ -1,0 +1,42 @@
+div{
+    font-size: x-large;
+}
+
+.container-in-container{
+    height: 90vh;
+    display: grid;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 130px);
+    grid-template-rows: repeat(3, 130px);
+    margin: 0 auto;
+}
+
+.grid-item {
+    background-color: rgb(255, 242, 182);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
+
+img{
+    width: 90%;
+    height: 90%;
+}
+
+p{
+    color: red;
+    margin: auto 0;
+    animation: imganim 12s 1 linear forwards;
+}
+
+@keyframes imganim {
+    20% {margin-left: 0px;}
+    40% {margin-left: 150px;}
+    60% {margin-left: 300px;}
+    80% {margin-left: 450px;}
+    100% {margin: 0 auto;}
+}
