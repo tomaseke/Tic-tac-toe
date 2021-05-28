@@ -1,5 +1,5 @@
-let cross = "<img src=\"https://img-premium.flaticon.com/png/512/1828/1828774.png?token=exp=1622192902~hmac=1124793199dd6bec0c04a4f94965812a\">";
-let circle = "<img src=\"https://image.flaticon.com/icons/png/512/33/33759.png\">";
+let cross = "<img src=\"cross.svg\">";
+let circle = "<img src=\"circle.svg\">";
 
 // gets value of all the divs into an array, something like this [x,o,x,o,x,o,x,o,x]
 function valuesOfDivs(){
@@ -49,10 +49,10 @@ function finalFunc(i){
     return function(){
        if(document.getElementById("paragraph").innerHTML != "X has won." && document.getElementById("paragraph").innerHTML != "O has won."){
         if(counter%2===0){
-            document.getElementsByClassName("grid-item")[i].innerHTML = "<img src=\"https://img-premium.flaticon.com/png/512/1828/1828774.png?token=exp=1622192902~hmac=1124793199dd6bec0c04a4f94965812a\">";
+            document.getElementsByClassName("grid-item")[i].innerHTML = cross;
         }
         else{
-            document.getElementsByClassName("grid-item")[i].innerHTML = "<img src=\"https://image.flaticon.com/icons/png/512/33/33759.png\">";
+            document.getElementsByClassName("grid-item")[i].innerHTML = circle;
         }
         counter++; 
         isGameOver(valuesOfDivs());
