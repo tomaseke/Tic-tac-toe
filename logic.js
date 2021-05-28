@@ -1,5 +1,5 @@
 const cross = "<img src=\"cross.svg\">"
-const circle = "<img src=\"https://image.flaticon.com/icons/png/512/33/33759.png\">";
+const circle = "<img src=\"circle.svg\">";
 
 // gets value of all the divs into an array, something like this [x,o,x,o,x,o,x,o,x]
 function valuesOfDivs(){
