@@ -1,4 +1,3 @@
-//let cross = "<img src=\"https://img-premium.flaticon.com/png/512/1828/1828774.png?token=exp=1622192902~hmac=1124793199dd6bec0c04a4f94965812a\">";
 const cross = "<img src=\"cross.svg\">"
 const circle = "<img src=\"https://image.flaticon.com/icons/png/512/33/33759.png\">";
 
@@ -28,6 +27,7 @@ function isGameOver(arrOfDivs){
         || arrOfDivs[2] === arrOfDivs[4] && arrOfDivs[4] === arrOfDivs[6] && arrOfDivs[2] == cross
         ){
         document.getElementById("paragraph").innerHTML = "X has won.";
+        document.getElementById("paragraph").dataset.gameOver = "true";
     }
         if(arrOfDivs[0] === arrOfDivs[1] && arrOfDivs[1] === arrOfDivs[2] && arrOfDivs[0] == circle
         || arrOfDivs[3] === arrOfDivs[4] && arrOfDivs[4] === arrOfDivs[5] && arrOfDivs[3] == circle
@@ -40,18 +40,19 @@ function isGameOver(arrOfDivs){
         || arrOfDivs[2] === arrOfDivs[4] && arrOfDivs[4] === arrOfDivs[6] && arrOfDivs[2] == circle
         ){
         document.getElementById("paragraph").innerHTML = "O has won.";
+        document.getElementById("paragraph").dataset.gameOver = "true";
         }
     if(counter === 10 && document.getElementById("paragraph").innerHTML == ""){
         document.getElementById("paragraph").innerHTML = "Draw";
+        document.getElementById("paragraph").dataset.gameOver = "true";
     }
 }
 
 function finalFunc(i){
     return function(){
-       if(document.getElementById("paragraph").innerHTML != "X has won." && document.getElementById("paragraph").innerHTML != "O has won."){
+       if(document.getElementById("paragraph").dataset.gameOver != "true"){
         if(counter%2===0){
             document.getElementsByClassName("grid-item")[i].innerHTML = cross;
-           //https://img-premium.flaticon.com/png/512/1828/1828774.png?token=exp=1622192902~hmac=1124793199dd6bec0c04a4f94965812a
         }
         else{
             document.getElementsByClassName("grid-item")[i].innerHTML = circle;
