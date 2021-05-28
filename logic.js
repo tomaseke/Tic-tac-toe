@@ -1,5 +1,5 @@
-let cross = "<img src=\"cross.svg\">";
-let circle = "<img src=\"circle.svg\">";
+let cross = "<img src=./\"cross.svg\">";
+let circle = "<img src=./\"circle.svg\">";
 
 // gets value of all the divs into an array, something like this [x,o,x,o,x,o,x,o,x]
 function valuesOfDivs(){
