@@ -1,4 +1,4 @@
-let cross = "<img src=\"https://img-premium.flaticon.com/png/512/1828/1828774.png?token=exp=1622192902~hmac=1124793199dd6bec0c04a4f94965812a\">";
+let cross = "<img hre=\"https://img-premium.flaticon.com/png/512/1828/1828774.png?token=exp=1622192902~hmac=1124793199dd6bec0c04a4f94965812a\">";
 let circle = "<img src=\"https://image.flaticon.com/icons/png/512/33/33759.png\">";
 
 // gets value of all the divs into an array, something like this [x,o,x,o,x,o,x,o,x]
