@@ -1,5 +1,26 @@
-const circle = "<img src=\"data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE1MCIgdmlld0JveD0iMCAwIDE1MCAxNTAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxjaXJjbGUgY3g9Ijc1IiBjeT0iNzUiIHI9IjcwIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjEwIi8+Cjwvc3ZnPgo=\">"
-const cross = "<img src=\"data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTcwIiBoZWlnaHQ9IjE2NiIgdmlld0JveD0iMCAwIDE3MCAxNjYiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIxNzAiIGhlaWdodD0iMTY2IiBmaWxsPSJibGFjayIgZmlsbC1vcGFjaXR5PSIwLjAxIi8+CjxnIGZpbHRlcj0idXJsKCNmaWx0ZXIwX2QpIj4KPGxpbmUgeDE9IjguNDY0NDciIHkxPSIxNTQuNDY0IiB4Mj0iMTU4LjQ2NCIgeTI9IjQuNDY0NDciIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMTAiLz4KPC9nPgo8bGluZSB4MT0iMTUuNTM1NSIgeTE9IjQuNDY0NDciIHgyPSIxNjUuNTM2IiB5Mj0iMTU0LjQ2NCIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIxMCIvPgo8ZGVmcz4KPGZpbHRlciBpZD0iZmlsdGVyMF9kIiB4PSIwLjkyODk0IiB5PSIwLjkyODkzMiIgd2lkdGg9IjE2NS4wNzEiIGhlaWdodD0iMTY1LjA3MSIgZmlsdGVyVW5pdHM9InVzZXJTcGFjZU9uVXNlIiBjb2xvci1pbnRlcnBvbGF0aW9uLWZpbHRlcnM9InNSR0IiPgo8ZmVGbG9vZCBmbG9vZC1vcGFjaXR5PSIwIiByZXN1bHQ9IkJhY2tncm91bmRJbWFnZUZpeCIvPgo8ZmVDb2xvck1hdHJpeCBpbj0iU291cmNlQWxwaGEiIHR5cGU9Im1hdHJpeCIgdmFsdWVzPSIwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAxMjcgMCIvPgo8ZmVPZmZzZXQgZHk9IjQiLz4KPGZlR2F1c3NpYW5CbHVyIHN0ZERldmlhdGlvbj0iMiIvPgo8ZmVDb2xvck1hdHJpeCB0eXBlPSJtYXRyaXgiIHZhbHVlcz0iMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMC4yNSAwIi8+CjxmZUJsZW5kIG1vZGU9Im5vcm1hbCIgaW4yPSJCYWNrZ3JvdW5kSW1hZ2VGaXgiIHJlc3VsdD0iZWZmZWN0MV9kcm9wU2hhZG93Ii8+CjxmZUJsZW5kIG1vZGU9Im5vcm1hbCIgaW49IlNvdXJjZUdyYXBoaWMiIGluMj0iZWZmZWN0MV9kcm9wU2hhZG93IiByZXN1bHQ9InNoYXBlIi8+CjwvZmlsdGVyPgo8L2RlZnM+Cjwvc3ZnPgo=\">";
+const circle = `<svg width="170" height="166" viewBox="0 0 170 166" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="170" height="166" fill="black" fill-opacity="0.01"/>
+<g filter="url(#filter0_d)">
+<line x1="8.46447" y1="154.464" x2="158.464" y2="4.46447" stroke="black" stroke-width="10"/>
+</g>
+<line x1="15.5355" y1="4.46447" x2="165.536" y2="154.464" stroke="black" stroke-width="10"/>
+<defs>
+<filter id="filter0_d" x="0.92894" y="0.928932" width="165.071" height="165.071" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+<feOffset dy="4"/>
+<feGaussianBlur stdDeviation="2"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+</filter>
+</defs>
+</svg>
+`;
+const cross = `<svg width="150" height="150" viewBox="0 0 150 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="75" cy="75" r="70" stroke="black" stroke-width="10"/>
+</svg>
+`;
 
 // gets value of all the divs into an array, something like this [x,o,x,o,x,o,x,o,x]
 function valuesOfDivs(){
