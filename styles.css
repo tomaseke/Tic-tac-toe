@@ -22,18 +22,15 @@ div{
     border: 1px solid black;
 }
 
-p{
-    color: red;
-    margin: auto 0;
-    animation: imganim 12s 1 linear forwards;
-}
-
-@keyframes imganim {
-    20% {margin-left: 0px;}
-    40% {margin-left: 150px;}
-    60% {margin-left: 300px;}
-    80% {margin-left: 450px;}
-    100% {margin: 0 auto;}
+p {
+    display: flex;
+    align-items: center;
+    animation: myfirst 5s 1 linear forwards;
+  }
+  
+@keyframes myfirst {
+    0%   {margin-left: 0;}
+    100%  {margin-left: 620px;}
 }
 
 svg{

@@ -26,7 +26,7 @@ function isGameOver(arrOfDivs){
         || arrOfDivs[0] === arrOfDivs[4] && arrOfDivs[4] === arrOfDivs[8] && arrOfDivs[0] == cross
         || arrOfDivs[2] === arrOfDivs[4] && arrOfDivs[4] === arrOfDivs[6] && arrOfDivs[2] == cross
         ){
-        document.getElementById("paragraph").innerHTML = "X has won.";
+        document.getElementById("paragraph").innerHTML = "X HAS WON.";
         document.getElementById("paragraph").dataset.gameOver = "true";
     }
         if(arrOfDivs[0] === arrOfDivs[1] && arrOfDivs[1] === arrOfDivs[2] && arrOfDivs[0] == circle
@@ -39,7 +39,7 @@ function isGameOver(arrOfDivs){
         || arrOfDivs[0] === arrOfDivs[4] && arrOfDivs[4] === arrOfDivs[8] && arrOfDivs[0] == circle
         || arrOfDivs[2] === arrOfDivs[4] && arrOfDivs[4] === arrOfDivs[6] && arrOfDivs[2] == circle
         ){
-        document.getElementById("paragraph").innerHTML = "O has won.";
+        document.getElementById("paragraph").innerHTML = "O HAS WON.";
         document.getElementById("paragraph").dataset.gameOver = "true";
         }
     if(counter === 10 && document.getElementById("paragraph").innerHTML == ""){
