@@ -50,7 +50,7 @@ function isGameOver(arrOfDivs){
 
 function finalFunc(i){
     return function(){
-       if(document.getElementById("paragraph").dataset.gameOver != "true"){
+       if(document.getElementById("paragraph").dataset.gameOver == "false"){
         if(counter%2===0){
             document.getElementsByClassName("grid-item")[i].innerHTML = cross;
         }
@@ -60,7 +60,7 @@ function finalFunc(i){
         counter++; 
         isGameOver(valuesOfDivs());
     }
-    }
+  }
 }
 
 
@@ -69,5 +69,8 @@ for(let i = 0; i < arrOfElements.length; i++){
     arrOfElements[i].addEventListener("click", finalFunc(i), {once: true});
 };
 
+// new game button
+const newGame = document.getElementsByTagName("button")[0];
+newGame.onclick = () => location.reload();
 
 

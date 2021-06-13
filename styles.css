@@ -14,6 +14,17 @@ div{
     margin: 0 auto;
 }
 
+button{
+    width: 130px;
+    height: 40px;
+    margin: 0 auto;
+    border-radius: 5px;
+    border: none;
+    background-color: #41a85f;
+    color: white;
+    cursor: pointer;
+}
+
 .grid-item {
     background-color: rgb(255, 242, 182);
     display: flex;
@@ -26,7 +37,7 @@ p {
     display: flex;
     align-items: center;
     font-size: 1em;
-    animation: myfirst 5s 1 linear forwards;
+    animation: myfirst 3s 1 linear forwards;
   }
   
 @keyframes myfirst {
