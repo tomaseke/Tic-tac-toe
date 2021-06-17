@@ -12,7 +12,7 @@ function valuesOfDivs(){
 
 
 let arrOfElements = document.getElementsByClassName("grid-item");
-let counter = 1;
+let counter = 0;
 
 // checks if someone has won
 function isGameOver(arrOfDivs){
@@ -42,7 +42,7 @@ function isGameOver(arrOfDivs){
         document.getElementById("paragraph").innerHTML = "O HAS WON";
         document.getElementById("paragraph").dataset.gameOver = "true";
         }
-    if(counter === 10 && document.getElementById("paragraph").innerHTML == ""){
+    if(counter === 9 && document.getElementById("paragraph").innerHTML == ""){
         document.getElementById("paragraph").innerHTML = "Draw";
         document.getElementById("paragraph").dataset.gameOver = "true";
     }
@@ -50,7 +50,7 @@ function isGameOver(arrOfDivs){
 
 function finalFunc(i){
     return function(){
-       if(document.getElementById("paragraph").dataset.gameOver == "false"){
+       if(document.getElementById("paragraph").dataset.gameOver == "false" && document.getElementsByClassName("grid-item")[i].innerHTML == ""){
         if(counter%2===0){
             document.getElementsByClassName("grid-item")[i].innerHTML = cross;
         }
@@ -66,11 +66,21 @@ function finalFunc(i){
 
 // adds event listener for the whole htmlCollection
 for(let i = 0; i < arrOfElements.length; i++){
-    arrOfElements[i].addEventListener("click", finalFunc(i), {once: true});
+    arrOfElements[i].addEventListener("click", finalFunc(i));
 };
+
+//
+function removeAll(){
+    for(let i = 0; i < arrOfElements.length; i++){
+        arrOfElements[i].innerHTML = "";
+    };
+    document.getElementById("paragraph").dataset.gameOver = "false";
+    document.getElementById("paragraph").innerHTML = "";
+    counter = 0;
+}
 
 // new game button
 const newGame = document.getElementsByTagName("button")[0];
-newGame.onclick = () => location.reload();
+newGame.onclick = () => removeAll();
 
 
